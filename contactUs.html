@@ -12,10 +12,10 @@
     />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/happyclub.css" />
-    <title>Happy Club</title>
+    <title>Happy Club contact</title>
   </head>
   <body>
-    <section class="topbar">
+    <div class="topbar">
       <div class="padding-x">
         <div class="topbar-align">
           <i class="far fa-smile-wink fa-3x padding-topbar text-blue"></i>
@@ -39,7 +39,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
     <nav class="padding-x nav-bg">
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -61,51 +61,80 @@
           </h1>
         </div>
       </div>
-      <main>
-        <div id="contactpage">
-          <div class="padding-x">
-            <br /><br />
-            <h2 id="contacth2">YOUR FEEDBACK IS IMPORTANT TO US</h2>
-            <p class="contactpara">
-              Your feedback helps us to improve our club and meet your
-              expectations.
-            </p>
-            <br /><br />
-            <form action="">
-              <label for="fname">First Name:</label>
-              <input
-                type="text"
-                id="fname"
-                name="firstname"
-                placeholder="Your name.."
-              />
-
-              <label for="lname">Last Name:</label>
-              <input
-                type="text"
-                id="lname"
-                name="lastname"
-                placeholder="Your last name.."
-              />
-
-              <label for="subject">Feedback:</label>
-              <textarea
-                id="subject"
-                name="subject"
-                placeholder="Help us get better..."
-                style="height:200px"
-              ></textarea>
-
-              <input
-                type="submit"
-                onclick="alert('Thankyou for giving the feedback will look into it.')"
-                value="SUBMIT"
-              />
-            </form>
-          </div>
-        </div>
-      </main>
     </section>
+    <main>
+      <div id="contactpage">
+        <div class="padding-x">
+          <br /><br />
+          <h2 id="contacth2">YOUR FEEDBACK IS IMPORTANT TO US</h2>
+          <p class="contactpara">
+            Your feedback helps us to improve our club and meet your
+            expectations.
+          </p>
+          <br /><br />
+          <form action="contactUs.html">
+            <label for="fname">First Name:</label>
+            <input
+              type="text"
+              id="fname"
+              name="firstname"
+              placeholder="Your name.."
+            />
+
+            <label for="lname">Last Name:</label>
+            <input
+              type="text"
+              id="lname"
+              name="lastname"
+              placeholder="Your last name.."
+            />
+
+            <label for="subject">Feedback:</label>
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="Help us get better..."
+              style="height:200px"
+            ></textarea>
+
+            <br /><br />
+            <label for="like">How much did you like our website?</label>
+            <div class="like">
+              <input type="radio" name="like" value="male" /> Very Much
+              <input type="radio" name="like" value="female" /> Best Website
+              Ever <input type="radio" name="like" value="other" /> Yes, its
+              amazing
+            </div>
+            <br />
+            <label for="check"
+              >Who would you most likely recommend this website?</label
+            >
+            <div class="like">
+              <input type="checkbox" name="check" value="friends" /> Friends
+              <input type="checkbox" name="check" value="Parents" />
+              Parents
+              <input type="checkbox" name="check" value="Relatives" />
+              Relatives
+              <input type="checkbox" name="check" value="GrandParents" />
+              Grand Parents
+            </div>
+            <br />
+            <label for="">Select your Age Group:</label>
+            <select>
+              <option value="1">Above 18</option>
+              <option value="2">Below 18</option>
+            </select>
+            <br />
+
+            <input
+              type="submit"
+              onclick="alert('Thankyou for giving the feedback will look into it.')"
+              value="SUBMIT"
+            />
+          </form>
+        </div>
+      </div>
+    </main>
 
     <footer class="padding-footer text-center bg-dark">
       Copyright &copy; 2019 Happy Club

@@ -301,6 +301,10 @@ a {
   text-decoration: none;
 }
 
+.like {
+  text-indent: 20px;
+}
+
 .read-more {
   padding-top: 0;
   padding-bottom: 0;
